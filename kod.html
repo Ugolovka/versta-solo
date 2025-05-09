@@ -7,379 +7,203 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
 </head>
-<body>
+<body> 
     <header class="container">
-        <div class="left-flex">
+        <div class="left-panel">
             <img class="logo" src="assets/moonriver.svg" alt="Logo">
-            <!-- <nav class="nav-flex">
-                <a href="#">Features</a>
-                <a href="#">Pricing</a>
-                <a href="#">Integrations</a>
-                <a href="#">Learn</a>    
-            </nav> -->
+            <h1 class="title">HIGH JEWELRY</h1>
+            <div class="collection-link">
+                <div class="line"></div>
+                <a href="#">Смотреть коллекцию</a>
+            </div>
+            <div class="language-switch">
+                <span class="active">RU</span> <span>EN</span>
+            </div>
         </div>
-        <div>
-            <button class="sing-in">Sign in</button>
-            <button class="demo">Book a demo</button>
+
+        <div class="right-panel">
+            <div class="icons">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-solid fa-lock"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="ring-container">
+                <img src="assets/kolco.svg" alt="Кольцо" />
+            </div>
+            <div class="ring-info">
+                <p><strong>КОЛЬЦО TRINITY, CARTIER</strong><br/>
+                Белое золото, бриллианты<br/>
+                <span class="price">498 000 Р</span></p>
+            </div>
         </div>
     </header>
     <main>
-        <section class="main-info container">
-            <div class="main-info-left">
-                <h1>HIGH JEWELRY</h1> 
-                <p class="main-info-text">Whirl lets you design and streamline your everyday tasks and workflows in just a few clicks.</p>
-                <div class="main-info-buttons">
-                    <button class="demo">Book a demo</button>
-                    <button class="sing-in">Learn more</button>
-                    <img src="assets/стрелка.svg">
-                </div>
-            </div>
-            <img src="assets/IMAGE.svg">
-        </section>
-
-    <section class="companies container">
-        <p class="companies-text">Trusted by 50,000+ companies</p>
-        <ul class="companies-list">
-            <li><img src="assets/IMAGE (4).svg"></li>
-            <li><img src="assets/IMAGE (3).svg"></li>
-            <li><img src="assets/IMAGE (2).svg"></li>
-            <li><img src="assets/IMAGE (1).svg"></li>
-        </ul>
-    </section>
-
-    <section class="features container">
-        <div class="features-fast">
-            <img src="assets/Vector.svg">
-            <h2>Fast. Really fast.</h2>
-            <p>
-                Ut enim ad minim veniam, quis 
-                nostrud exercitation ullamco laboris 
-                nisi ut aliquip ex ea commodo consequat.
-            </p>
-        </div>
-        <div class="features-buck">
-            <img src="assets/IMAGE (5).svg">
-            <h2>More bang for buck.</h2>
-            <p>
-                Ut enim ad minim veniam, quis 
-                nostrud exercitation ullamco laboris 
-                nisi ut aliquip ex ea commodo consequat.
-            </p>
-        </div>
-        <div class="features-safe">
-            <img src="assets/IMAGE (6).svg">
-            <h2>Safe and secure.</h2>
-            <p>
-                Ut enim ad minim veniam, quis 
-                nostrud exercitation ullamco laboris 
-                nisi ut aliquip ex ea commodo consequat.
-            </p>
-        </div>
-    </section>
-
-    <section class="care">
-        <div class="container">
-            <h4 class="care-title">
-                We will take care of everything, 
-                so you can get back to relaxing.
-            </h4>
-            <div class="care-block">
-                <div class="care-block-list">
-                    <div class="care-block-item">
-                        <div class="care-block-item-left">
-                            <img src="assets/pin.svg">
-                            <div class="care-block-item-text">
-                                <h3>
-                                    Anti-loss technology
-                                </h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, 
-                                    consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt 
-                                    ut labore et dolore magna aliqua.
-                                </p>
-                            </div>
-                        </div>
-                        <button><img src="assets/arrow-down.svg"></button>
+        <section class="categories-section">
+            <div class="categories">
+                <button class="category-card men">
+                    <div class="category-text">
+                        <p>Перейти в раздел</p>
+                        <h2>Для мужчин</h2>
                     </div>
-                    <div class="care-block-item">
-                        <div  class="care-block-item-left">
-                            <img src="assets/smile.svg">
-                            <div class="care-block-item-text">
-                                <h3>
-                                    Exchange easily
-                                </h3>
-                            </div>
-                        </div>
-                        <button><img src="assets/arrow-down.svg"></button>
+                </button>
+                <button class="category-card women">
+                    <div class="category-text">
+                        <p>Перейти в раздел</p>
+                        <h2>Для женщин</h2>
                     </div>
-                    <div class="care-block-item">
-                        <div class="care-block-item-left">
-                            <img src="assets/pismo.svg">
-                            <div class="care-block-item-text">
-                                <h3>
-                                    Fully encrypted
-                                </h3>
-                            </div>
-                        </div>
-                        <button><img src="assets/arrow-down.svg"></button>
-                    </div>
-                    <div class="care-block-item">
-                        <div class="care-block-item-left">
-                            <img src="assets/molnia.svg">
-                            <div class="care-block-item-text">
-                                <h3>
-                                    Plenty of options
-                                </h3>
-                            </div>
-                        </div>
-                        <button><img src="assets/arrow-down.svg"></button>
-                    </div>
-                </div>
-                <img class="care-block-img" src="assets/comp.png">
-            </div>
-        </div>
-    </section>
-
-    <section class="about container">
-        <h4 class="about-title">
-            What's Whirl all about?
-        </h4>
-        <div class="about-block">
-            <div class="about-block-item">
-                <h2>All on one place.</h2>
-                <p>
-                    Ut enim ad minim veniam,
-                    uis nostrud exercitation 
-                    ullamco laboris nisi ut aliquip 
-                    ex ea commodo consequat.
-                </p>
-            </div>
-            <div class="about-block-item">
-                <img src="assets/alerts.svg">
-                <h2>Get daily alerts.</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore.
-                </p>
-            </div>
-            <div class="about-block-item">
-                <img src="assets/secure.svg">
-                <h2>Safe and secure.</h2>
-                <p>
-                    Ut enim ad minim veniam, 
-                    quis nostrud exercitation 
-                    ullamco laboris nisi ut 
-                    aliquip ex ea commodo consequat.
-                </p>
-    </section>
-
-    <section class="track">
-        <div class="container track-block">
-            <img src="assets/track.svg">
-            <div class="track-block-info">
-                <h4>Set, forget, and then track.</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua.
-                </p>
-                <ul class="track-block-list">
-                    <li>Understand your options</li>
-                    <li>No lock-ins</li>
-                    <li>You own the shares</li>
-                </ul>
-                <button class="demo">Book a demo</button>
-            </div>
-        </div>
-    </section>
-
-    <section class="automated container">
-        <h4 class="automated-title">Your tasks, automated.</h4>
-        <p class="automated-text">
-            Lorem ipsum dolor sit amet, 
-            consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt 
-            ut labore et dolore magna aliqua.
-        </p>
-        <div class="automated-block">
-            <div class="automated-block-item">
-                <img src="assets/bubble.svg">
-                <h2>Learn your options.</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    sed do eiusmod tempor.
-                </p>
-            </div>
-            <div class="automated-block-item">
-                <img src="assets/molnya.svg">
-                <h2>Stay informed.</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt 
-                    ut labore et doloretro.
-                </p>
-            </div>
-            <div class="automated-block-item">
-                <img src="assets/like.svg">
-                <h2>Automate it all.</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    sed do eiusmod tempor ipsum.
-                </p>
-            </div>
-            <div class="automated-block-item">
-                <img src="assets/znak.svg">
-                <h2>Stay informed.</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    sed do eiusmod incididunt ut 
-                    labore et consectetur.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="blog">
-        <div class="container">
-            <div class="blog-info">
-                <h4>Get smarter, with our blog.</h4>
-                <button class="sing-in">See All Posts</button>
-            </div>
-            <div class="blog-block">
-                <div class="blog-block-item">
-                    <img src="assets/tel.svg">
-                    <div class="blog-block-item-info">
-                        <h5>Improvements</h5>
-                        <h2>
-                         Automating Daily Tasks from Your Phone
-                        </h2>
-                        <p>
-                            Dicta nihil ratione corrupti. 
-                            Aut dolorem dolores omnis 
-                            laboriosam ratione sequi. 
-                            Provident ad sed velit. Est ea ab.
-                        </p>
-                        <p>April 24, 2022</p>
-                        </div>
-                    </div>
-                    <div class="blog-block-item">
-                        <img src="assets/pc.svg">
-                        <div class="blog-block-item-info">
-                            <h5>Tips & Tricks</h5>
-                            <h2>
-                                Can You Automate Group Learning?
-                            </h2>
-                            <p>
-                                Dicta nihil ratione corrupti. 
-                                Aut dolorem dolores omnis 
-                                laboriosam ratione sequi. 
-                                Provident ad sed velit. Est ea ab.
-                            </p>
-                            <p>April 24, 2022</p>
-                        </div>
-                    </div>
-                    <div class="blog-block-item">
-                        <img src="assets/dollar.svg">
-                        <div class="blog-block-item-info">
-                            <h5>News</h5>
-                            <h2>
-                                Our $3,000,000 B Round Investors
-                            </h2>
-                            <p>
-                                Eos ipsum et est quis neque cum. 
-                                Quis autem est eligendi amet 
-                                animi eaque. Itaque minus illo 
-                                delectus vel vitae dolores minus.
-                            </p>
-                            <p>April 24, 2022</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="faf container">
-        <div class="ack">
-            <div class="cr">
-                <h2 class="banan">Get started with Whirl</h2>
-                <p class="ne">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                <button class="demo1">Book a demo</button>
-                <div class="ni">
-                    <p> <img  src="assets/galka.svg"> Free 30-day trial</p>
-                    <p><img  src="assets/galka.svg"> No credit-card required</p>
-                </div>
-                 
-            </div>
-            
-        </div>
-    </section>
-
-    <footer class="container">
-        <div class="opt">
-            <div class="imus">
-                <img src="assets/logo.svg"> 
-                <div class="xex">
-                    <p>Built by<span class="none">Nikolai Bain.</span></p>
-                    <p>Powered by <span class="none">Webflow.</span></p>
-                </div>
-                
-            </div>
-            <div class="bl1">
-                <p>Info</p>
-                <div class="asus"> 
-                    <p>Features</p>
-                    <p>Pricing</p>
-                    <p>Blog</p>
-                    <p>Support</p>
-                    <p>Terms & Conditions</p>
-                    <p>Privacy Policy</p>
-                </div>
-            
-            </div>
-            <div class="bl2">
-                <p>Admin</p>
-                <div class="asus">
-                    <p>Style Guide</p>
-                    <p>Licenses</p>
-                    <p>Instructions</p>
-                    <P>Changelog</P>
-                    <P>Password</P>
-                    <P>404</P>
-                </div>
-                
-            </div>
-            <div class="bl3">
-                <p>Newsletter</p>
-                <P class="lol">Sign up for the latest news, company insights, and Whirl updates.</P>
-                <div>
-                    <input class="input" type="text" name="username" id="username" placeholder="Your email">
-                    <img  src="assets/arrow.svg">
-                  </div>
-            </div>
-        </div>
-        
-        <img class="cunga" src="assets/line.svg">
-        <div class="arab">
-            <p>© 2022 Whirl. All Rights Reserved. Illustrations by <span class="none">Streamline</span></p>
-            <div> 
-                <img src="assets/bird.svg">
-                <img class="ram" src="assets/in.svg">
-                <img class="ram" src="assets/feec.svg">
+                </button>
             </div>
           
-        </div>
-    </footer>
+            <div class="map-section">
+                <div class="map-text">
+                    <h3>Найди<br>бутик около себя</h3>
+                    <p>Введите свой адрес и узнайте о самых ближайших бутиках к вам</p>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Введите адрес">
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="map-image">
+                    <img src="/assets/map.svg" alt="Карта с локациями бутиков">
+                </div>
+            </div>
+        </section>
+          
 
-</main>    
+        <section class="product-gallery">
+            <div class="product-item">
+              <img src="/assets/jows.svg" alt="Кольцо Jow’s, Cartier">
+              <h4>КОЛЬЦО JOW’S, CARTIER</h4>
+              <p>Белое золото, бриллианты</p>
+              <span class="price">674 000 ₽</span>
+            </div>
+          
+            <div class="product-item large">
+              <img src="/assets/etoile.svg" alt="Колье Etoile, Hublot">
+              <h4>КОЛЬЕ ETOILE, HUBLOT</h4>
+              <p>Белое золото, бриллианты</p>
+              <span class="price">539 000 ₽</span>
+            </div>
+          
+            <div class="product-item">
+              <img src="/assets/moon.svg" alt="Серьги Moon, Hublot">
+              <h4>СЕРЬГИ MOON, HUBLOT</h4>
+              <p>Желтое золото, сапфир</p>
+              <span class="price">498 000 ₽</span>
+            </div>
+          
+            <div class="product-item">
+              <img src="/assets/croix.svg" alt="Кольцо Croix, Cartier">
+              <h4>КОЛЬЦО CROIX, CARTIER</h4>
+              <p>Желтое, белое, розовое золото</p>
+              <span class="price">432 000 ₽</span>
+            </div>
+          
+            <div class="product-item">
+              <img src="/assets/win.svg" alt="Серьги Win, Blancpain">
+              <h4>СЕРЬГИ WIN, BLANCPAIN</h4>
+              <p>Желтое золото, жемчуг</p>
+              <span class="price">398 000 ₽</span>
+            </div>
+        </section>
+
+        <section class="social-section">
+            <div class="container">
+                <div class="social-header">
+                    <h2 class="social-title">
+                        Мы<br>
+                        в социальных сетях
+                    </h2>
+                </div>
+                <div class="social-img">
+                    <img src="/assets/dress.svg" alt="">
+                    <img src="/assets/brosh.svg" alt="">
+                    <img src="/assets/sergi.svg" alt="">
+                    <img src="/assets/edit.svg" alt="">
+                    <img src="/assets/coffee.svg" alt="">
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M17 3H7C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17V7C21 4.79086 19.2091 3 17 3Z" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M17.5 7.5V7.501" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="categories-section">
+            <div class="map-section">
+                <div class="map-image">
+                    <img src="/assets/model.svg" alt="">
+                </div>
+                <div class="map-text">
+                    <h3>телефон флагманского магазина</h3>
+                    <p>подпишитесь на новости</p>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Введите адрес">
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="container">
+            <div class="Info">
+                <div class="bl1">
+                    <p>работа в компании</p>
+                </div>
+
+                <div class="bl2">
+                    <p>условия пользования</p>
+                </div>
+
+                <div class="bl3">
+                    <p>выходные данные</p>
+                </div>
+
+                <div class="bl4">
+                    <p>политика конфиденциальности</p>
+                </div>
+
+                <div class="bl5">
+                    <p>карта сайта</p>
+                </div>
+            </div>
+            
+            <div class="foot">
+                <div class="logo-light">
+                    <img src="assets/logo-light.svg" alt="Logo">
+                </div>
+                <div> 
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M17 3H7C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17V7C21 4.79086 19.2091 3 17 3Z" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M17.5 7.5V7.501" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+              
+            </div>
+        </footer>
+    </main>    
 </body>
 </html>
