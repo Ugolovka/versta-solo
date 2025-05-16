@@ -10,14 +10,15 @@
     margin-left: 102px;
   }
   .container {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+  .main {
     display: flex;
     height: 100vh;
     flex-wrap: wrap;
     background-color: #272727;
-    margin: 0 auto;
-    max-width: 1440px;
   }
-  
   .left-panel {
     width: 50%;
     padding: 60px;
@@ -104,7 +105,7 @@
   }
   
   .categories-section {
-    font-family: 'Georgia', serif;
+    font-family: 'Futura PT', serif;
   }
   
   /* Верхняя часть — категории */
@@ -152,8 +153,6 @@
   /* Фоновые изображения */
   .category-card.men {
     background-image: url(/assets/men.svg);
-    width: 710px;
-    height: 587px;
   }
   
   .category-card.women {
@@ -236,9 +235,8 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
     gap: 20px;
-    padding: 40px;
     background-color: #f8f8f8;
-    font-family: 'Georgia', serif;
+    font-family: 'Futura PT', serif;
   }
   
   .product-item {
@@ -363,11 +361,9 @@
       font-weight: 300;
       letter-spacing: 2px;
       margin-bottom: 5px;
-      color: #000;
-      width: 518px;
-      height: 106px;
+      color: #ffffff;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       margin-bottom: 32px;
   }
   
@@ -401,10 +397,13 @@
     height: 385px;
   }
   .social-img img{
-    width: 385px;
     height: 385px;
   }
-
+.model-column-tel {
+  flex: 1;
+  padding: 0 20px;
+  margin-top: 180px;
+}
   .footer {
     background-color: #000;
     color: #fff;
@@ -523,10 +522,12 @@
 }
 .model-section {
   display: flex;
-  background-color: #1a1a1a;
-  color: white;
+  color: #272727;
 }
-
+.model {
+  width: 710px;
+  height: 640px;
+}
 .model-text {
   flex: 1;
   width: 519px;
@@ -607,6 +608,22 @@
 @font-face {
   font-family: "Futura PT";
   src: url("/fonts/FuturaPT-Light.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("/fonts/SegoeUI-Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("/fonts/SegoeUI-Light.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
