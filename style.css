@@ -76,7 +76,7 @@
   .icons {
     display: flex;
     justify-content: flex-end;
-    gap: 25px;
+    gap: 40px;
     font-size: 18px;
   }
   
@@ -111,7 +111,6 @@
   /* Верхняя часть — категории */
   .categories {
     display: flex;
-    height: 400px;
   }
   
   .category-card {
@@ -123,6 +122,8 @@
     align-items: center;
     justify-content: center;
     color: white;
+    width: 710px;
+    height: 587px;
   }
   
   .category-card::before {
@@ -162,7 +163,7 @@
   /* Нижняя часть — карта и поиск */
   .map-section {
     display: flex;
-    background-color: #1a1a1a;
+    background-image: url(/assets/Rectangle\ 14.svg);
     color: white;
   }
   
@@ -177,18 +178,20 @@
   }
   
   .map-text h3 {
-    font-size: 32px;
+    font-size: 48px;
     line-height: 1.4;
     width: 386px;
     height: 106px;
+    font-family: "Forum";
   }
   
   .map-text p {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 18px;
     opacity: 0.9;
     width: 386px;
     height: 46px;
+    font-family: "Futura PT";
   }
   
   .search-bar {
@@ -227,7 +230,7 @@
   }
   
   .map-image img {
-    width: 740px;
+    width: 744px;
     height: 604px;
   }
   .product-gallery {
@@ -241,7 +244,7 @@
   
   .product-item {
     background-color: #ededed;
-    padding: 20px;
+    padding: 20px 30px 0 30px;
     width: 400px;
     height: 400px;
     text-align: left;
@@ -250,33 +253,74 @@
     justify-content: space-between;
   }
   
+  .product-item-bottom {
+    background-color: #ededed;
+    padding: 33px 30px 0 30px;
+    width: 400px;
+    height: 400px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+
   .product-item img {
     width: 260px;
     object-fit: cover;
     margin-bottom: 15px;
-    margin: 47px 50px 67px 50px;
+    margin: 27px 30px 67px 50px;
   }
   
+  .product-item-bottom img {
+    width: 260px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    margin: 27px 40px 67px 40px;
+  }
+
   .product-item h4 {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     color: #333;
-    margin-bottom: 5px;
+    margin-bottom: 9px;
   }
   
-  .product-item p {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 8px;
-  }
-  
-  .product-item .price {
+  .product-item-bottom h4 {
     font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 9px;
+  }
+
+  .product-item p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 9px;
+  }
+
+  .product-item-bottom p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 9px;
+  }
+
+  .product-item .price {
+    font-size: 18px;
     color: #d4a76a;
     font-weight: bold;
+    margin-bottom: 20px;
   }
-  
+
+  .product-item-bottom .price {
+    font-size: 18px;
+    color: #d4a76a;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
   .product-item.large {
     grid-column: span 1;
     grid-row: span 2;
@@ -289,11 +333,12 @@
   .product-item.large h4{
     margin-left: 20px;
     margin-bottom: 10px;
-    padding: 714px 360px 9px 10px;
+    padding: 714px 360px 0 10px;
+    color: #ffffff;
   }
   .product-item.large p{
     margin-left: 30px;
-    margin-bottom: 10px;
+    color: #ffffff;
   }
   .product-item.large .price {
     margin-left: 30px;
@@ -302,42 +347,43 @@
 
   .product-item-left {
     background-color: #ededed;
-    padding: 20px;
+    padding: 0 40px 0 20px;
     width: 400px;
     height: 400px;
     text-align: left;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
   
   .product-item-left img {
     width: 320px;
     height: 300px;
     object-fit: cover;
-    margin-bottom: 15px;
-    margin: 0;
-    padding-left: 20px;
+    margin: 0 40px 0 20px;
   }
   
   .product-item-left h4 {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     color: #333;
     margin-bottom: 5px;
+    margin-left: 10px;
   }
   
   .product-item-left p {
-    font-size: 14px;
+    font-size: 18px;
     color: #666;
     margin-bottom: 8px;
+    margin-left: 10px;
   }
   
   .product-item-left .price {
-    font-size: 16px;
+    font-size: 18px;
     color: #d4a76a;
     font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 10px;
   }
 
 
@@ -345,32 +391,31 @@
   .social-section {
       padding: 60px 0;
       background-color: #272727;
-      text-align: center;
       border-top: 1px solid #e5e5e5;
       border-bottom: 1px solid #e5e5e5;
   }
   
   .social-header {
-      margin-bottom: 30px;
       width: 518px;
-      height: 106px;
+      margin: 40px 0 80px 162px;
   }
   
   .social-title {
-      font-size: 32px;
+      font-size: 48px;
       font-weight: 300;
       letter-spacing: 2px;
       margin-bottom: 5px;
       color: #ffffff;
       display: flex;
-      justify-content: center;
-      margin-bottom: 32px;
+      font-family: 'Forum', serif;;
   }
   
   .social-links {
       display: flex;
-      justify-content: center;
-      gap: 30px;
+      justify-content: flex-start;
+      gap: 20px;
+      margin-left: 162px;
+      margin-top: 80px;
   }
   
   .social-link {
@@ -399,9 +444,17 @@
   .social-img img{
     height: 385px;
   }
-.model-column-tel {
+  .knopka {
+    display: flex;
+    gap: 50px;
+    margin-left: 671px;
+  }
+  .group {
+    padding-top: 6px;
+  }
+  .model-column-tel {
   flex: 1;
-  padding: 0 20px;
+  padding: 0 0 0 183px;
   margin-top: 180px;
 }
   .footer {
@@ -434,7 +487,7 @@
 }
 
 .footer-title {
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -627,4 +680,103 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+}
+
+
+.site-footer {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  padding: 80px 162px;
+  font-family: 'Futura PT', serif;
+}
+
+.footer-top {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 72px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav li a {
+  color: #ffffff;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  flex: 1;
+}
+
+.footer-contact, .footer-subscribe {
+  flex: 1;
+}
+
+.footer-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 5px;
+}
+
+.footer-phone {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: white;
+  font-size: 16px;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #666;
+  margin-bottom: 10px;
+}
+
+.subscribe-form input {
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: 8px;
+  flex: 1;
+  font-size: 14px;
+}
+
+.subscribe-form button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.app-links img {
+  height: 30px;
+  margin-right: 10px;
+}
+.line {
+  background-image: url(/assets/Line.svg);
 }
