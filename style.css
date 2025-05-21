@@ -15,7 +15,7 @@
   }
   .main {
     display: flex;
-    height: 100vh;
+    height: 1024px;
     flex-wrap: wrap;
     background-color: #272727;
   }
@@ -33,7 +33,6 @@
     color: #1c1c1c;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 
   
@@ -46,18 +45,24 @@
   .collection-link {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 38px;
     font-style: italic;
+    font-family: "Segoe UI";
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 231px;
   }
   
   .collection-link .line {
     height: 1px;
-    width: 60px;
+    width: 130px;
     background-color: #666;
   }
   
   .language-switch {
     font-size: 14px;
+    margin-top: 433px;
+    margin-left: 102px;
   }
   
   .language-switch .active {
@@ -84,7 +89,9 @@
     display: flex;
     align-items: center;
     width: 322px;
-    margin-right: 327px;
+    position: absolute;
+    top: 367px;
+    right: 520px;
   }
   
   .ring-container img {
@@ -92,29 +99,38 @@
     height: auto;
   }
   
-  .ring-info {
+  .ring-info h4 {
     text-align: right;
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 16px;
     margin-bottom: 30px;
+    font-family: "Futura PT";
   }
-  
+  .ring-info p {
+    text-align: right;
+    font-size: 18px;
+    margin-bottom: 9px;
+    font-family: "Futura PT";
+  }
+
   .ring-info .price {
     color: #d4a649;
     font-weight: bold;
+    font-family: "Segoe UI";
+    font-style: oblique
   }
   
   .categories-section {
     font-family: 'Futura PT', serif;
+    margin-top: 20px;
   }
   
   /* Верхняя часть — категории */
   .categories {
     display: flex;
+    gap: 20px;
   }
   
   .category-card {
-    flex: 1;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -145,6 +161,7 @@
   
   .category-text h2 {
     font-size: 64px;
+    padding-bottom: 23px;
     border-bottom: 1px solid #fff;
     padding-top: 10px;
     margin-top: 10px;
@@ -164,6 +181,8 @@
     display: flex;
     background-image: url(/assets/Rectangle\ 14.svg);
     color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   .map-text {
@@ -178,7 +197,6 @@
   
   .map-text h3 {
     font-size: 48px;
-    line-height: 1.4;
     width: 386px;
     height: 106px;
     font-family: "Forum";
@@ -239,6 +257,7 @@
     gap: 20px;
     background-color: #f8f8f8;
     font-family: 'Futura PT', serif;
+    margin-bottom: 25px;
   }
   
   .product-item {
@@ -311,6 +330,7 @@
     color: #d4a76a;
     font-weight: bold;
     margin-bottom: 20px;
+    font-style: oblique
   }
 
   .product-item-bottom .price {
@@ -318,6 +338,7 @@
     color: #d4a76a;
     font-weight: bold;
     margin-bottom: 20px;
+    font-style: oblique
   }
 
   .product-item.large {
@@ -342,6 +363,7 @@
   .product-item.large .price {
     margin-left: 30px;
     margin-bottom: 30px;
+    font-style: oblique
   }
 
   .product-item-left {
@@ -383,6 +405,7 @@
     font-weight: bold;
     margin-bottom: 20px;
     margin-left: 10px;
+    font-style: oblique
   }
 
 
@@ -450,6 +473,9 @@
   }
   .group {
     padding-top: 6px;
+  }
+  .model-section-full {
+    font-family: 'Futura PT', serif;
   }
   .model-column-tel {
   flex-wrap: wrap;
