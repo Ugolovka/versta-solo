@@ -136,22 +136,21 @@
   .category-text {
     position: relative;
     text-align: center;
-    z-index: 1;
   }
   
   .category-text p {
-    font-size: 16px;
+    font-size: 24px;
     opacity: 0.8;
   }
   
   .category-text h2 {
-    font-size: 36px;
-    border-top: 1px solid #fff;
+    font-size: 64px;
+    border-bottom: 1px solid #fff;
     padding-top: 10px;
     margin-top: 10px;
+    font-family: "Forum";
   }
   
-  /* Фоновые изображения */
   .category-card.men {
     background-image: url(/assets/men.svg);
   }
@@ -453,9 +452,23 @@
     padding-top: 6px;
   }
   .model-column-tel {
-  flex: 1;
+  flex-wrap: wrap;
   padding: 0 0 0 183px;
   margin-top: 180px;
+}
+.model-title-top {
+  font-family: "Futura PT";
+  font-size: 18px;
+}
+.model-title {
+  font-family: "Futura PT";
+  font-size: 18px;
+  padding-left: 25px;
+}
+.model-phone{
+  font-size: 22px;
+  color: #959595;
+  padding: 30px 0 0 25px;
 }
   .footer {
     background-color: #000;
@@ -505,7 +518,7 @@
 }
 
 .footer-phone:hover {
-    color: #ccc;
+    color: #c2c2c2cc;
 }
 
 .footer-nav ul {
@@ -552,11 +565,33 @@
     font-size: 16px;
     transition: background 0.3s;
 }
-
+.model-subscribe-form button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 0 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
 .subscribe-form button:hover {
     background: #444;
 }
-
+.model-subscribe-form{
+  display: flex;
+  margin-bottom: 40px;
+  padding-left: 25px;
+  padding-top: 30px;
+}
+.model-subscribe-form input {
+  flex-grow: 1;
+  padding: 10px 15px;
+  background: transparent;
+  border: 1px solid #333;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
 .footer-bottom {
     text-align: center;
     padding-top: 30px;
@@ -598,7 +633,13 @@
   height: 106px;
   font-family: 'Futura PT';
 }
-
+.model-subscribe{
+  width: 280px;
+  height: 106px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 110px;
+}
 .model-text p {
   margin-top: 20px;
   font-size: 14px;
@@ -646,7 +687,9 @@
   width: 710px;
   height: 640px;
 }
-
+.text-model{
+  
+}
 
 
 
@@ -710,7 +753,6 @@
   font-size: 13px;
   text-transform: uppercase;
   text-decoration: none;
-  opacity: 0.8;
 }
 
 .footer-bottom {
@@ -724,23 +766,35 @@
 .footer-logo {
   font-size: 24px;
   font-weight: bold;
-  flex: 1;
+  width: 258px;
+  height: 53px;
 }
 
-.footer-contact, .footer-subscribe {
-  flex: 1;
+.footer-contact {
+  width: 184px;
+  height: 106px;
+  margin-left: 274px;
+  display: flex;
+  flex-wrap: wrap;
 }
-
+.footer-subscribe{
+  width: 280px;
+  height: 106px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 40px;
+}
 .footer-label {
   font-size: 14px;
   text-transform: uppercase;
-  opacity: 0.7;
   margin-bottom: 5px;
+  color: #ffffff;
 }
 
 .footer-phone {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 10px;
+  color: #c2c2c2;
 }
 
 .social-icons a {
