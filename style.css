@@ -20,11 +20,11 @@
     background-color: #272727;
   }
   .left-panel {
-    width: 50%;
+    width: 878px;
     padding: 60px;
   }
   .right-panel {
-    width: 50%;
+    width: 562px;
     padding: 60px 60px 60px 0px;
   }
   
@@ -38,7 +38,7 @@
   
   .title {
     font-size: 64px;
-    margin: 80px 0 20px 102px;
+    margin: 326px 0 20px 102px;
     font-family: 'Forum';
   }
   
@@ -61,7 +61,7 @@
   
   .language-switch {
     font-size: 14px;
-    margin-top: 433px;
+    margin-top: 364px;
     margin-left: 102px;
   }
   
@@ -80,9 +80,9 @@
   
   .icons {
     display: flex;
-    justify-content: flex-end;
     gap: 40px;
     font-size: 18px;
+    margin-left: 140px;
   }
   
   .ring-container {
@@ -91,7 +91,7 @@
     width: 322px;
     position: absolute;
     top: 367px;
-    right: 520px;
+    right: 387px;
   }
   
   .ring-container img {
@@ -102,7 +102,7 @@
   .ring-info h4 {
     text-align: right;
     font-size: 16px;
-    margin-bottom: 30px;
+    margin-top: 9px;
     font-family: "Futura PT";
   }
   .ring-info p {
@@ -116,7 +116,8 @@
     color: #d4a649;
     font-weight: bold;
     font-family: "Segoe UI";
-    font-style: oblique
+    font-style: oblique;
+    margin-top: 9px;
   }
   
   .categories-section {
@@ -163,8 +164,6 @@
     font-size: 64px;
     padding-bottom: 23px;
     border-bottom: 1px solid #fff;
-    padding-top: 10px;
-    margin-top: 10px;
     font-family: "Forum";
   }
   
@@ -215,6 +214,7 @@
     margin-top: 30px;
     display: flex;
     border-bottom: 1px solid #ccc;
+    align-items: center;
   }
   
   .search-bar input {
@@ -231,11 +231,13 @@
   }
   
   .search-bar button {
-    background: none;
+    background: url(/assets/стрелка\ блек.svg);
     border: none;
     color: white;
     font-size: 18px;
     cursor: pointer;
+    width: 30px;
+    height: 17px;
   }
   
   .map-image {
@@ -582,41 +584,33 @@
     outline: none;
 }
 
-.subscribe-form button {
-    background: #333;
-    color: #fff;
-    border: none;
-    padding: 0 20px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background 0.3s;
-}
 .model-subscribe-form button {
-  background: #333;
-  color: #fff;
+  background: url(/assets/свага.svg);
   border: none;
-  padding: 0 20px;
-  cursor: pointer;
+  color: #fff;
   font-size: 16px;
+  cursor: pointer;
+  height: 17px;
+  width: 30px;
   transition: background 0.3s;
 }
-.subscribe-form button:hover {
-    background: #444;
-}
+
 .model-subscribe-form{
   display: flex;
   margin-bottom: 40px;
-  padding-left: 25px;
+  margin-left: 25px;
   padding-top: 30px;
+  align-items: center;
+  border-bottom: 1px solid #333;
 }
 .model-subscribe-form input {
   flex-grow: 1;
   padding: 10px 15px;
   background: transparent;
-  border: 1px solid #333;
   color: #fff;
   font-size: 14px;
-  outline: none;
+  border: none;
+  width: 250px;
 }
 .footer-bottom {
     text-align: center;
@@ -693,14 +687,6 @@
   color: #aaa;
 }
 
-.search-bar button {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-}
-
 .model-image {
   flex: 1;
   background-color: #222;
@@ -713,11 +699,6 @@
   width: 710px;
   height: 640px;
 }
-.text-model{
-  
-}
-
-
 
 @font-face {
   font-family: "Futura PT";
@@ -846,11 +827,14 @@
 }
 
 .subscribe-form button {
-  background: none;
+  background: url(/assets/стрелка\ блек.svg);
   border: none;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
+  height: 17px;
+  width: 30px;
+  transition: background 0.3s;
 }
 
 .app-links img {
