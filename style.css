@@ -8,6 +8,7 @@
     width: 258px;
     height: 53px;
     margin-left: 102px;
+    align-items: center;
   }
   .container {
     margin: 0 auto;
@@ -34,8 +35,14 @@
     display: flex;
     flex-direction: column;
   }
-
-  
+  .fa-solid-fa-bars{
+    padding-left: 50px;
+  }
+  .ring-info{
+    width: 200px;
+    margin-left: 202px;
+    text-align:end;
+  }
   .title {
     font-size: 64px;
     margin: 326px 0 20px 102px;
@@ -100,13 +107,12 @@
   }
   
   .ring-info h4 {
-    text-align: right;
     font-size: 16px;
     margin-top: 9px;
     font-family: "Futura PT";
+    letter-spacing: 1px;
   }
   .ring-info p {
-    text-align: right;
     font-size: 18px;
     margin-bottom: 9px;
     font-family: "Futura PT";
@@ -157,16 +163,22 @@
   
   .category-text p {
     font-size: 24px;
-    opacity: 0.8;
+    font-family: 'Futura PT';
+    font-weight: normal;
   }
   
   .category-text h2 {
     font-size: 64px;
     padding-bottom: 23px;
-    border-bottom: 1px solid #fff;
     font-family: "Forum";
+    font-weight: normal;
   }
-  
+  .category-text-border{
+    border: 1px solid #fff;
+    width: 130px;
+    height: 1px;
+    margin-left: 100px;
+  }
   .category-card.men {
     background-image: url(/assets/men.svg);
   }
@@ -199,6 +211,7 @@
     width: 386px;
     height: 106px;
     font-family: "Forum";
+    font-weight: normal;
   }
   
   .map-text p {
@@ -757,7 +770,7 @@
 
 .footer-nav li a {
   color: #ffffff;
-  font-size: 13px;
+  font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
 }
