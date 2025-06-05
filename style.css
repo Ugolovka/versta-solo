@@ -617,11 +617,12 @@
   border-bottom: 1px solid #333;
 }
 .model-subscribe-form input {
+  font-family: 'Futura PT';
   flex-grow: 1;
   padding: 10px 15px;
   background: transparent;
   color: #fff;
-  font-size: 14px;
+  font-size: 22px;
   border: none;
   width: 250px;
 }
@@ -831,12 +832,13 @@
 }
 
 .subscribe-form input {
+  font-family: 'Futura PT';
   background: transparent;
   border: none;
   color: #fff;
   padding: 8px;
   flex: 1;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .subscribe-form button {
