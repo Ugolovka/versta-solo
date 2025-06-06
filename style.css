@@ -3,13 +3,20 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+  html, body {
+    scroll-behavior: smooth;
+  }
   .logo{
     width: 258px;
     height: 53px;
     margin-left: 102px;
     align-items: center;
+    transition: 1s;
   }
+  .logo:hover{
+    transform: scale(1.1);
+  }
+
   .container {
     margin: 0 auto;
     max-width: 1440px;
@@ -23,7 +30,16 @@
   .left-panel {
     width: 878px;
     padding: 60px;
-  }
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+  
+    .left-panel.visible {
+    opacity: 1;
+    transform: translateY(0);
+    }
+    
   .right-panel {
     width: 562px;
     padding: 60px 60px 60px 0px;
@@ -91,8 +107,11 @@
     gap: 40px;
     font-size: 18px;
     margin-left: 140px;
+    transition: 1s;
   }
-  
+  .icons:hover{
+    transform: scale(1.1);
+  }
   .ring-container {
     display: flex;
     align-items: center;
@@ -105,8 +124,11 @@
   .ring-container img {
     max-width: 100%;
     height: auto;
+    transition: 1s;
   }
-  
+  .ring-container img:hover{
+    transform: scale(1.2);
+  }
   .ring-info h4 {
     font-size: 16px;
     margin-top: 9px;
@@ -182,13 +204,19 @@
   }
   .category-card.men {
     background-image: url(/assets/men.svg);
+    transition: 1s;
   }
-  
+  .category-card.men:hover{
+    transform: scale(1.1);
+  }
   .category-card.women {
     background-image: url(/assets/woman.svg);
+    transition: 1s;
   }
-  
-  /* Нижняя часть — карта и поиск */
+  .category-card.category-card.women:hover{
+    transform: scale(1.1);
+  }
+
   .map-section {
     display: flex;
     background-image: url(/assets/Rectangle\ 14.svg);
@@ -201,12 +229,21 @@
     flex: 1;
     width: 519px;
     height: 604px;
-    padding:  171px 162px 327px 162px;
+    padding: 171px 162px 327px 162px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.map-text.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
   .map-text h3 {
     font-size: 48px;
     width: 386px;
@@ -214,7 +251,7 @@
     font-family: "Forum";
     font-weight: normal;
   }
-  
+
   .map-text p {
     margin-top: 20px;
     font-size: 18px;
@@ -304,15 +341,21 @@
     object-fit: cover;
     margin-bottom: 15px;
     margin: 27px 30px 67px 50px;
+    transition: 1s;
   }
-  
+  .product-item img:hover{
+    transform: scale(1.2);
+  }
   .product-item-bottom img {
     width: 260px;
     object-fit: cover;
     margin-bottom: 15px;
     margin: 27px 40px 67px 40px;
+    transition: 1s;
   }
-
+  .product-item-bottom img:hover{
+    transform: scale(1.2);
+  }
   .product-item h4 {
     font-size: 16px;
     font-weight: bold;
@@ -364,8 +407,11 @@
     width: 600px;
     height: 820px;
     background-image: url(/assets/etoile.svg);
+    transition: 1s;
   }
-    
+  .product-item.large:hover{
+    transform: scale(1.2);
+  }
   .product-item.large h4{
     margin-left: 20px;
     margin-bottom: 10px;
@@ -397,8 +443,11 @@
     height: 300px;
     object-fit: cover;
     margin: 0 40px 0 20px;
+    transition: 1s;
   }
-  
+  .product-item-left img:hover{
+    transform: scale(1.2);
+  }
   .product-item-left h4 {
     font-size: 16px;
     font-weight: bold;
@@ -446,7 +495,16 @@
       color: #ffffff;
       display: flex;
       font-family: 'Forum', serif;;
-  }
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+      }
+    
+      .social-title.visible {
+      opacity: 1;
+      transform: translateY(0);
+      }
+  
   
   .social-links {
       display: flex;
@@ -454,7 +512,11 @@
       gap: 20px;
       margin-left: 162px;
       margin-top: 80px;
-  }
+      transition: 1s;
+    }
+    .social-links:hover{
+      transform: scale(1.1);
+    }
   
   .social-link {
       color: #000;
@@ -481,7 +543,12 @@
   }
   .social-img img{
     height: 385px;
+    transition: 1s;
   }
+  .social-img img:hover{
+    transform: scale(1.1);
+  }
+  
   .knopka {
     display: flex;
     gap: 50px;
@@ -497,7 +564,16 @@
   flex-wrap: wrap;
   padding: 0 0 0 183px;
   margin-top: 180px;
-}
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  .model-column-tel.visible {
+  opacity: 1;
+  transform: translateY(0);
+  }
+
 .model-title-top {
   font-family: "Futura PT";
   font-size: 18px;
@@ -650,7 +726,12 @@
 .model {
   width: 710px;
   height: 640px;
+  transition: 1s;
 }
+.model:hover{
+  transform: scale(1.1);
+}
+
 .model-text {
   flex: 1;
   width: 519px;
@@ -674,7 +755,16 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 110px;
-}
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  .model-subscribe.visible {
+  opacity: 1;
+  transform: translateY(0);
+  }
+
 .model-text p {
   margin-top: 20px;
   font-size: 14px;
@@ -708,6 +798,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .model-image img {
@@ -758,7 +849,16 @@
 .footer-top {
   padding-bottom: 20px;
   margin-bottom: 30px;
-}
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  .footer-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  }
+
 
 .footer-nav {
   list-style: none;
@@ -790,6 +890,10 @@
   font-weight: bold;
   width: 258px;
   height: 53px;
+  transition: 1s;
+}
+.footer-logo:hover{
+  transform: scale(1.2);
 }
 
 .footer-contact {
@@ -798,14 +902,32 @@
   margin-left: 274px;
   display: flex;
   flex-wrap: wrap;
-}
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  .footer-contact.visible {
+  opacity: 1;
+  transform: translateY(0);
+  }
+
 .footer-subscribe{
   width: 280px;
   height: 106px;
   display: flex;
   flex-wrap: wrap;
   margin-left: 40px;
-}
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  .footer-subscribe.visible {
+  opacity: 1;
+  transform: translateY(0);
+  }
+
 .footer-label {
   font-size: 14px;
   text-transform: uppercase;
